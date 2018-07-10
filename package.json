@@ -1,0 +1,16 @@
+{
+  "name": "webworker-as-promise",
+  "version": "1.0.0",
+  "description": "a test for webworkers and how to make them promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webworker",
+    "promise",
+    "javascript"
+  ],
+  "author": "Franco Rossi",
+  "license": "ISC"
+}
