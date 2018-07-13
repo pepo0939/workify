@@ -1,7 +1,7 @@
 workify=(workerCode, onSuccess, onError)=>{
 
     const workerFrame = `self.postMessage('Created');
-    self.onmessage = event => { self.postMessage(${workerCode.toString()}(event.data));}`;
+    self.onmessage = event => { self.postMessage((${workerCode.toString()})(event.data));};`;
 
     const blobWorker = new Blob([workerFrame], {type: 'application/javascript'});
     const worker = new Worker(window.URL.createObjectURL(blobWorker));
