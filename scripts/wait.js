@@ -1,4 +1,4 @@
-window.onload=() => {
+runFor = () => {
     const start = Date.now(); // milliseconds
     console.time();
     let x = 0;
