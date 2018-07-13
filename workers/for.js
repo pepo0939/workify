@@ -1,3 +1,5 @@
+self.postMessage('workerFor');
+
 self.onmessage = function(event) {
     const start = Date.now(); // milliseconds
     let x = 0;

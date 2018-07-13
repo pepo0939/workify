@@ -21,6 +21,7 @@ workerWaitFive.addEventListener('error', event => {
 const workerFor = new Worker('workers/for.js');
 workerFor.addEventListener('message', event => {
     console.log('message received from workerFor => ', event.data);
+    console.log(event);
     const div = document.getElementById('result');
     div.innerHTML = 'message received => ' + event.data;
 });
@@ -30,5 +31,9 @@ workerFor.addEventListener('error', event => {
 
 
 runWorker = ()=>{
-    workerFor.postMessage(null);
+    workerFor.postMessage('something');
+};
+
+killWorker = ()=>{
+    workerFor.terminate();
 };
