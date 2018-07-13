@@ -5,11 +5,20 @@
     <title>With Workify</title>
     <script src="./scripts/workify.js"></script>
     <script src="./scripts/with-workify.js"></script>
+    <script src="./scripts/counter.js"></script>
 </head>
 
 <body>
-    <div id="result">loading...</div>
-    <button onclick="runWorker()">Run Worker, Run</button>
-    <button onclick="killWorker()">KILL IT!</button>
+    <div>
+        <div id="result">loading...</div>
+        <button onclick="runWorker()">Run Worker, Run</button>
+        <button onclick="killWorker()">KILL IT!</button>
+    </div>
+    <br/>
+    <span>Counter:<span id="counter">0</span></span>
+    <br/>
+    <button onclick="runAdd()">++</button>
+    <br/>
+    <button onclick="runSubtract()">--</button>
 </body>
 </html>

@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Workers</title>
     <!-- main.js -->
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/counter.js"></script>
 </head>
 <body>
-    <a href="wait.html">>>Wait Page</a>
-    <a href="with-workify.html">>>With Workify</a>
-    <div id="result">loading...</div>
-    <button onclick="runWorker()">Run Worker, Run</button>
-    <button onclick="killWorker()">KILL IT!</button>
+    <div>
+        <a href="wait.html">>>Wait Page</a>
+        <br/>
+        <a href="with-workify.html">>>With Workify</a>
+    </div>
+    <br/>
+    <div>
+        <div id="result">loading...</div>
+        <button onclick="runWorker()">Run Worker, Run</button>
+        <button onclick="killWorker()">KILL IT!</button>
+    </div>
+    <br/>
+    <span>Counter:<span id="counter">0</span></span>
+    <br/>
+    <button onclick="runAdd()">++</button>
+    <br/>
+    <button onclick="runSubtract()">--</button>
 </body>
 </html>
